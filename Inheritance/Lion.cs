@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OopsConcept.Inheritance
 {
-    internal class Lion
+    internal class Lion : Animal
     {
     }
 }
