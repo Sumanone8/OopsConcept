@@ -1,4 +1,6 @@
-﻿using OopsConcept.ClassandObject;
+﻿using OopsConcept.Abstraction;
+using OopsConcept.ClassandObject;
+using OopsConcept.Encapsulation;
 using OopsConcept.Inheritance;
 using OopsConcept.Polymarphism;
 
@@ -9,7 +11,7 @@ namespace OopsConcept
         static void Main(string[] args)
         {
             Console.WriteLine("Please choose any one program from below options.");
-            Console.WriteLine("1.ClassAndObject concept\n2.Inheritance\n3.Polymarphism");
+            Console.WriteLine("1.ClassAndObject concept\n2.Inheritance\n3.Polymarphism\n4.Abstraction\n5.Encapsulation");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -42,6 +44,17 @@ namespace OopsConcept
                     parttime.Name = "Harsh";
                     parttime.Salary = 15000;
                     parttime.EmployeeDetails();
+                    break;
+                case 5:
+                    SBIAtm atm = new SBIAtm();
+                    atm.WithdrawMoney();
+                    atm.ConnectingToBackEnd();
+                    break;
+                case 6:
+                    StudentDetails student = new StudentDetails();
+                    student.studentDetails = "ab";
+                    student.age = 30;
+                    student.StudentData();
                     break;
                 default:
                     Console.WriteLine("Please Choose program whithin the given options");
